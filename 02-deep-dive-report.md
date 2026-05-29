@@ -12,6 +12,7 @@
 | 1 | *GIÁP MINH HIẾU* | *2A202600667* |
 | 2 | *NGUYỄN KHỞI LÂM* | *2A202600607* |
 | 3 | *NGUYỄN THÀNH VINH* | *2A202600971* |
+| 4 | *NGUYỄN ĐĂNG KHƯƠNG* | *2A202600584* |
 
 **Tên nhóm:** *Super awesome team*
 

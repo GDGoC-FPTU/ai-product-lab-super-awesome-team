@@ -422,7 +422,7 @@ def run_autograder():
         print("[WARNING] Co file bi thieu hoac kiem thu code khong dat. Vui loi kiem tra lai log.")
         sys.exit(1)
     else:
-        print("[SUCCESS] Tat ca cac check duoc chon deu thanh cong!")
+        print("[SUCCESS] Day du file nop bai. San sang push!")
         sys.exit(0)
 
 if __name__ == "__main__":

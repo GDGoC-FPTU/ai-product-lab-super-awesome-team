@@ -5,6 +5,8 @@
 
 ---
 
+# Giáp Minh Hiếu
+
 ## 🤖 1. AI giúp gì? — Vai trò trợ lý đồng hành (Thought-Partner)
 
 Trong suốt buổi Lab, tôi đã sử dụng AI (Claude, Gemini) làm trợ lý đồng hành ở nhiều giai đoạn khác nhau:
@@ -79,3 +81,5 @@ Qua buổi Lab, tôi rút ra 3 bài học quan trọng khi làm việc với AI:
 2. **Ranh giới an toàn cần viết DỨT KHOÁT, không mơ hồ:** Thay vì viết *"không nên thay đổi"*, phải viết *"TUYỆT ĐỐI CẤM, KHÔNG BAO GIỜ"* kèm hành động cụ thể khi vi phạm. AI cần boundary rõ ràng, không ngầm hiểu.
 
 3. **Problem First, AI Second:** Luôn bắt đầu từ bài toán thực tế, sau đó mới tìm giải pháp AI phù hợp. Đừng để AI dẫn dắt bạn vào over-engineering chỉ vì nó biết nhiều công nghệ.
+
+

@@ -1,8 +1,5 @@
 # 03-ai-log.md
 
-- Tên: Nguyễn Văn A (ví dụ)
-- Ngày: 2026-05-29
-
 ---
 
 ## 1. AI đã giúp gì
@@ -23,5 +20,3 @@ Trong một vài thử nghiệm ban đầu, mô hình đề xuất trạm sạc 
 - Yêu cầu HITL (human-in-the-loop) cho mọi hành động tự động trong giai đoạn thử nghiệm.
 
 ---
-
-*Ghi chú: cập nhật tên, ngày và trải nghiệm thực tế của bạn trước khi nộp.*

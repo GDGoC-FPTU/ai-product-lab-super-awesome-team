@@ -51,5 +51,3 @@
 - Quick Architecture: [ ] No AI  [x] Rule  [ ] LLM  [ ] Agent
 
 ---
-
-*Ghi chú: thay các thông tin cá nhân và số liệu thực tế theo dữ liệu nhóm.*

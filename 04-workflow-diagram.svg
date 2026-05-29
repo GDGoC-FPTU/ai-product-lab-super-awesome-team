@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .lane { fill:#f6f8fb; stroke:#d7e2ef; }
+    .lane-label { font: 18px Arial, sans-serif; fill:#1f2937; }
+    .box { fill:#ffffff; stroke:#2b6cb0; stroke-width:2; rx:6; }
+    .box-text { font:16px Arial, sans-serif; fill:#0f172a; }
+    .arrow { stroke:#111827; stroke-width:2; fill:none; marker-end:url(#arrowhead); }
+    .note { font:14px Arial, sans-serif; fill:#374151; }
+    .decision { fill:#fff7ed; stroke:#d97706; stroke-width:2; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#111827" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Current-State Workflow — Intelligent Dispatcher</text>
+
+  <!-- Swimlanes -->
+  <rect x="20" y="80" width="1160" height="180" class="lane"/>
+  <text x="40" y="110" class="lane-label">System</text>
+
+  <rect x="20" y="280" width="1160" height="180" class="lane"/>
+  <text x="40" y="310" class="lane-label">Dispatcher (Human)</text>
+
+  <rect x="20" y="480" width="1160" height="180" class="lane"/>
+  <text x="40" y="510" class="lane-label">Driver / External</text>
+
+  <!-- Steps in System lane -->
+  <g id="step1">
+    <rect x="180" y="110" width="200" height="60" class="box"/>
+    <text x="280" y="140" text-anchor="middle" class="box-text">Incoming trip request</text>
+    <text x="280" y="156" text-anchor="middle" class="note">(automated)</text>
+  </g>
+
+  <g id="step2">
+    <rect x="420" y="110" width="240" height="60" class="box"/>
+    <text x="540" y="140" text-anchor="middle" class="box-text">System suggests assignments</text>
+    <text x="540" y="156" text-anchor="middle" class="note">(ranked candidates)</text>
+  </g>
+
+  <!-- Proposal to Dispatcher -->
+  <g id="step3">
+    <rect x="700" y="110" width="300" height="60" class="box"/>
+    <text x="850" y="140" text-anchor="middle" class="box-text">Draft suggestion emitted</text>
+    <text x="850" y="156" text-anchor="middle" class="note">Prefix: [DRAFT_ONLY]</text>
+  </g>
+
+  <!-- Arrows System -> Dispatcher -->
+  <path d="M 880 170 L 880 240" class="arrow" />
+  <path d="M 880 240 L 560 240" class="arrow" />
+
+  <!-- Dispatcher lane steps -->
+  <g id="step4">
+    <rect x="420" y="300" width="320" height="60" class="box"/>
+    <text x="580" y="335" text-anchor="middle" class="box-text">Dispatcher reviews & edits</text>
+  </g>
+
+  <g id="step5">
+    <rect x="780" y="300" width="220" height="60" class="box"/>
+    <text x="890" y="335" text-anchor="middle" class="box-text">Contact driver (call / SMS)</text>
+  </g>
+
+  <!-- Arrow Dispatcher -> Driver -->
+  <path d="M 890 360 L 890 480" class="arrow" />
+
+  <!-- Driver lane -->
+  <g id="step6">
+    <rect x="780" y="520" width="220" height="60" class="box"/>
+    <text x="890" y="555" text-anchor="middle" class="box-text">Driver accepts / rejects</text>
+  </g>
+
+  <!-- Feedback loop back to Dispatcher -->
+  <path d="M 890 580 L 890 640 L 520 640" class="arrow" />
+  <path d="M 520 640 L 520 360" class="arrow" />
+
+  <!-- Reassignment decision -->
+  <g id="decision">
+    <rect x="160" y="360" width="160" height="60" class="decision" rx="8"/>
+    <text x="240" y="395" text-anchor="middle" class="box-text">Reassign needed?</text>
+  </g>
+  <path d="M 420 360 L 320 390" class="arrow" />
+
+  <!-- Notes / metrics -->
+  <text x="40" y="720" class="note">Bottleneck: manual reassignment & phone calls — avg 8 minutes delay</text>
+  <text x="40" y="740" class="note">Business impact: high human cost, increased wait times, driver churn</text>
+  <text x="900" y="720" class="note">Legend: [DRAFT_ONLY] = human approval required</text>
+
+  <!-- Step numbers for reference -->
+  <text x="250" y="100" font-size="12" text-anchor="middle" fill="#0f172a">1</text>
+  <text x="540" y="100" font-size="12" text-anchor="middle" fill="#0f172a">2</text>
+  <text x="850" y="100" font-size="12" text-anchor="middle" fill="#0f172a">3</text>
+  <text x="580" y="290" font-size="12" text-anchor="middle" fill="#0f172a">4</text>
+  <text x="890" y="290" font-size="12" text-anchor="middle" fill="#0f172a">5</text>
+  <text x="890" y="500" font-size="12" text-anchor="middle" fill="#0f172a">6</text>
+
+</svg>
